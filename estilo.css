@@ -1,0 +1,74 @@
+/* MMA GLORY — las dos páginas que Apple pide.
+   Un solo archivo, sin fuentes de fuera, sin nada que cargar. */
+
+:root {
+    --fondo: #070a10;
+    --panel: #0f1622;
+    --borde: #1d2938;
+    --texto: #e8edf4;
+    --suave: #93a3b8;
+    --oro: #e2b23c;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    padding: 0 20px 72px;
+    background: var(--fondo);
+    color: var(--texto);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.hoja { max-width: 720px; margin: 0 auto; }
+
+header {
+    padding: 48px 0 24px;
+    border-bottom: 1px solid var(--borde);
+    margin-bottom: 32px;
+}
+
+.marca {
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--oro);
+    font-weight: 700;
+    margin: 0 0 8px;
+}
+
+h1 { font-size: 30px; line-height: 1.2; margin: 0 0 8px; }
+h2 { font-size: 20px; margin: 36px 0 10px; }
+.fecha { color: var(--suave); font-size: 15px; margin: 0; }
+
+p, li { color: var(--texto); }
+ul { padding-left: 22px; }
+li { margin-bottom: 6px; }
+
+a { color: var(--oro); }
+
+.caja {
+    background: var(--panel);
+    border: 1px solid var(--borde);
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin: 20px 0;
+}
+
+.caja p:first-child { margin-top: 0; }
+.caja p:last-child { margin-bottom: 0; }
+
+footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--borde);
+    color: var(--suave);
+    font-size: 15px;
+}
+
+@media (max-width: 520px) {
+    body { font-size: 16px; }
+    h1 { font-size: 25px; }
+}
